@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+	<title>bigBottle</title>
+</head>
+<body>
+<div class="container">
+	<div class="content">
+		<h1>Personalisierbare Champagnerflasche</h1>
+		<p>Das ideale Geschenk! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit quod omnis, itaque vitae, eligendi corporis cum saepe nemo voluptatum cupiditate sed? Corporis corrupti molestias eveniet numquam dolor esse harum.</p>
+		<div class="teaserImage"></div>
+	</div>
+</div>
+<div class="container">
+	<div class="content contentSmall">
+		<h2>Schritt 1:</h2>
+		<h3>Bitte wählen Sie die gewünschte Flaschengrösse aus.</h3>
+		<div class="bottleSelectBox">
+			<ul>
+				<li>
+					<div class="bottleContainer">
+						<label>
+							<img class="bottleImage" src="img/3356512-01.webp" alt="Champagnerflasche klein">
+							<span class="bottleDescription">Tempranillo Catalunya D.O. Miret, 50cl</span>
+							<span class="bottlePrice">24.95</span>
+							<input type="radio" name="bottle" value="smallBottle" id="bottle" onClick="selectBottle(this);">
+						</label>
+					</div>
+				</li>
+				<li>
+					<div class="bottleContainer">
+						<label>
+							<img class="bottleImage" src="img/3243206-01.webp" alt="Champagnerflasche gross">
+							<span class="bottleDescription">Randolfi IGP Merlot Cabernet Tarantino, 75cl</span>
+							<span class="bottlePrice">36.95</span>
+							<input type="radio" name="bottle" value="largeBottle" id="bottle" onClick="selectBottle(this);">
+						</label>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content contentSmall">
+		<h2>Schritt 2:</h2>
+		<h3>Text aus Vorlage wählen.</h3>
+		<p>Sie können nun einen unserer vorgefertigten Texte auswählen. Oder Sie geben im nächsten Schritt ihren eigenen persönlichen Text ein.</p>
+		<div class="textDraft" id="textDraft">
+			<!-- <select class="form-select" name="texte" id="texte" onChange="prefillWithDraft()">
+				<option value="">Bitte auswählen</option>
+				<option value="Das ist Text 1 | Teil 1">Das ist Text 1 - links | Teil 1 - rechts</option>
+				<option value="Das ist Text 2 | Teil 2">Das ist Text 2 - links | Teil 2 - rechts</option>
+				<option value="Das ist Text 3 | Teil 3">Das ist Text 3 - links | Teil 3 - rechts</option>
+				<option value="Das ist Text 4 | Teil 4">Das ist Text 4 - links | Teil 4 - rechts</option>
+			</select> -->
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="content contentSmall">
+		<h2>Vorschau:</h2>
+		<div class="previewChampagner" id="previewChampagner">
+			<div class="previewTextChampagner">
+				<div id="previewRow1" class="previewRow1"></div>
+				<div id="previewRow2" class="previewRow2"></div>
+			</div>
+		</div>
+	</div>
+	<div class="content contentSmall">
+		<h2>Schritt 3:</h2>
+		<h3>Eigenen Text entwerfen.</h3>
+		<label for="zeile1" class="form-label">Obere Zeile</label>
+		<input class="form-control" type="text" id="zeile1" pattern="^[a-zA-Z0-9-_\.]{1,20}" maxlength="20" onKeyUp="preview('previewRow1', this.value)">
+		
+		<label for="zeile1" class="form-label">Untere Zeile</label>
+		<input class="form-control" type="text" id="zeile2" pattern="^[a-zA-Z0-9-_\.]{1,20}" maxlength="20" onKeyUp="preview('previewRow2', this.value)">
+
+		<button class="btn btn-info" type="button" value="JETZT BESTELLEN" onClick="sendBtn()">Jetzt bestellen</button>
+	</div>
+</div>
+<footer>
+	<script src="js/bottle.js"></script>
+</footer>
+</body>
+</html>

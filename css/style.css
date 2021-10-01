@@ -1,0 +1,170 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	background-color: #eee;
+	color: #444;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+	padding: 2rem;
+}
+
+h2
+
+a {
+	color: #64c4ed;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+.btn {
+	float: right;
+	padding: .375rem .75rem;
+	border-width: 1px;
+	-webkit-box-shadow: 0 10px 20px -6px rgb(0 0 0 / 12%);
+	-moz-box-shadow: 0 10px 20px -6px rgba(0,0,0,.12);
+	box-shadow: 0 10px 20px -6px rgb(0 0 0 / 12%);
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+}
+
+.btn.btn-info {
+	color: #fff;
+	border-color: #64c4ed;
+	background: #64c4ed;
+}
+
+img {
+	max-width: 100%;
+}
+
+.teaserImage {
+	background-image: url('../img/teaser.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 200px;
+}
+
+button { cursor: pointer; }
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	background-color: #fefefe;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 16px #ccc;
+}
+
+.content {
+	width: 100%;
+	padding: 25px 35px;
+}
+
+.contentSmall { width: 50%; }
+
+.bottleSelectBox ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.bottleSelectBox ul li {
+	float: left;
+	width: calc((100%/2) - 30px);
+	margin-right: 30px;
+}
+
+.bottleSelectBox ul li .bottleContainer span.bottleDescription {
+	font-size: .85em;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.bottleSelectBox ul li .bottleContainer span.bottlePrice {
+	font-size: 1em;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.bottleSelectBox ul li .bottleContainer input[type="radio"] {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.previewChampagner {
+	position: relative;
+	height: 500px;
+}
+
+.previewChampagner#previewChampagner {
+	/* background-image: url('../img/3243206-01_large.jpg'); */
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.previewTextChampagner {
+	position: relative;
+	left: 170px;
+	top: 310px;
+	white-space: nowrap;
+}
+
+.form-label { margin-bottom: .5rem; }
+
+label { display: inline-block; }
+
+.form-select {
+	display: block;
+	width: 100%;
+	padding: .375rem 2.25rem .375rem .75rem;
+	-moz-padding-start: calc(0.75rem - 3px);
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #444;
+	background-color: #fff;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: right .75rem center;
+	background-size: 16px 12px;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin-bottom: 20px;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #444;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	margin-bottom: 20px;
+}
