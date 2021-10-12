@@ -79,21 +79,6 @@ h1 { text-align: center; }
 	margin: auto;
 }
 
-.content#teaser {
-	justify-content: center;
-	background-image: url('https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/gold_sterne_background.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.content {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	background-color: #FAC890;
-	padding: 25px 35px;
-}
-
 ul.bottleSelectBox {
 	display: flex;
 	flex-wrap: wrap;
@@ -144,24 +129,7 @@ ul.bottleSelectBox li .bottleContainer input[type="radio"] {
 	height: 700px;
 }
 
-.previewChampagner#previewChampagner {
-	/* background-image: url('https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8409901-01.png'); */
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.previewTextChampagner {
-	position: relative;
-	left: 266px;
-	bottom: 183px;
-	white-space: nowrap;
-	text-align: center;
-	width: 206px;
-}
-
-.previewTextChampagner span {
-	display: block;
-}
+.previewTextChampagner span { display: block; }
 
 .form-label { margin-bottom: .5rem; }
 
@@ -212,10 +180,6 @@ label { display: inline-block; }
 @media screen and (min-width: 800px) {
 	.column {
 		flex: 1 1 400px;
-	}
-
-	.double-column {
-		flex: 1
 	}
 
 	.introText {
