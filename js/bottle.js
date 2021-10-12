@@ -46,10 +46,16 @@ function generateSelect() {
 generateSelect();
 
 function selectBottle(myBottle) {
-	if (myBottle.value == 'smallBottle') {
-		document.getElementById("previewChampagner").style.backgroundImage = "url('img/3356512-01.jpg')";
-	} else {
-		document.getElementById("previewChampagner").style.backgroundImage = "url('img/3243206-01_large.jpg')";
+	switch (myBottle.value) {
+		case 'smallBottle':
+			// document.getElementById('previewChampagner').src='pic_bulboff.gif';
+			document.getElementById("previewChampagner").setAttribute('src', 'https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8409901-01_vorschau.jpg');
+			break;
+			
+			case 'largeBottle':
+			document.getElementById("previewChampagner").setAttribute('src', 'https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8410001-01_vorschau.jpg');
+			// document.getElementById("previewChampagner").style.backgroundImage = "url('https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8410001-01_vorschau.jpg')";
+			break;
 	}
 }
 
@@ -79,30 +85,28 @@ function prefillWithDraft(multiRow = false) {
 }
 
 function sendOrder() {
-	bottle = document.getElementById("previewChampagner").value;
+	bottle = document.querySelector('input[name="bottle"]:checked').value;
 	if (document.getElementById('previewRow1').innerHTML != '' ) {
 		switch (bottle) {
 			case 'smallBottle':
-				link = 'https://www.angela-bruderer.ch/de/lunchbox-m-mit-gravur';
+				link = 'https://stage.angela-bruderer.ch/de/chiancone-due-terre-cuvee-vino-rosso-rotwein';
 				break;
 
 			case 'largeBottle':
-				link = 'https://www.angela-bruderer.ch/de/pfeffermuehle-peugeot-personal-3574400';
+				link = 'https://stage.angela-bruderer.ch/de/chiancone-due-terre-cuvee-vino-rosso-rotwein';
 				break;
 		}
 	} else {
 		return false;
 	}
 
-	result = link + '?zeile1=' + document.getElementById('zeile1').value + '&zeile2=' + document.getElementById('zeile2').value;
+	window.location.href = link + '?zeile1=' + document.getElementById('zeile1').value + '&zeile2=' + document.getElementById('zeile2').value;
 }
-
-sendOrder();
 
 function sendBtn() {
 	if (document.getElementById('previewRow1').innerHTML != '' &&
 		document.getElementById('previewRow2').innerHTML != '') {
-			window.location.href = 'https://stage.angela-bruderer.ch/de/notizbuch-a5-kariert-240-seite-2337800?zeile1=' + document.getElementById('zeile1').value + '&zeile2=' + document.getElementById('zeile2').value;
+			window.location.href = 'https://stage.angela-bruderer.ch/de/chiancone-due-terre-cuvee-vino-rosso-rotwein?zeile1=' + document.getElementById('zeile1').value + '&zeile2=' + document.getElementById('zeile2').value;
 	} else {
 		return false;
 	}
