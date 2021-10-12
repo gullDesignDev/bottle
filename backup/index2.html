@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+	<title>Champagner personalisierbar</title>
+</head>
+<body>
+<div class="wrapper">
+	<div class="row inhalt">
+		<div class="column">
+			<!-- <div class="inhalt"> -->
+			<h1>Champagner - Das prickelnde Erlebnis!</h1>
+			<ul class="bottleSelectBox">
+				<li>
+					<div class="bottleContainer">
+						<label>
+							<img class="bottleImage" src="https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8409901-01.png" alt="Cuvée Prestige Blanc de Blancs Brut, 75cl">
+							<span class="bottleDescription">Cuvée Prestige Blanc de Blancs Brut, 75cl</span>
+							<span class="bottlePrice">59.90</span>
+							<input type="radio" name="bottle" value="smallBottle" id="bottle" onClick="selectBottle(this);">
+						</label>
+					</div>
+				</li>
+				<li>
+					<div class="bottleContainer">
+						<label>
+							<img class="bottleImage" src="https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8410001-01.png" alt="Cuvée Prestige Blanc de Blancs Brut, 150cl">
+							<span class="bottleDescription">Cuvée Prestige Blanc de Blancs Brut, 150cl</span>
+							<span class="bottlePrice">119.90</span>
+							<input type="radio" name="bottle" value="largeBottle" id="bottle" onClick="selectBottle(this);">
+						</label>
+					</div>
+				</li>
+			</ul>
+			<div class="">
+				<h2>Personalisieren Sie Ihren Champagner für den besonderen Anlass!</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora aut nemo. Natus pariatur quod eius voluptates repudiandae. Assumenda minus at consequuntur aut autem dolor quia est totam placeat provident!</p>
+			</div>
+			<!-- </div> -->
+		</div>
+	</div>
+	<div class="row preview">
+		<div class="column">
+			<div class="vorschau">
+				<h2>Vorschau:</h2>
+				<div class="previewWrapper">
+					<!-- <div class="previewChampagner" id="previewChampagner"></div> -->
+					<img src="https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8409901-01_vorschau.jpg" alt="">
+					<div class="previewTextChampagner">
+						<span id="previewRow1" class="previewRow1"></span>
+						<span id="previewRow2" class="previewRow2"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="inhalt">
+				<h2>Schritt 3:</h2>
+				<h3>Eigenen Text entwerfen.</h3>
+				<div class="textDraft" id="textDraft">
+				</div>
+				<label for="zeile1" class="form-label">Obere Zeile</label>
+				<input class="form-control" type="text" id="zeile1" pattern="^[a-zA-Z0-9-_\.]{1,18}" maxlength="18" onKeyUp="preview('previewRow1', this.value)">
+				
+				<label for="zeile1" class="form-label">Untere Zeile</label>
+				<input class="form-control" type="text" id="zeile2" pattern="^[a-zA-Z0-9-_\.]{1,22}" maxlength="22" onKeyUp="preview('previewRow2', this.value)">
+
+				<button class="btn btn-info" type="button" value="JETZT BESTELLEN" onClick="sendOrder()">Jetzt bestellen</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- 
+<div class="masterWrapper">
+	<div class="content" id="teaser">
+		<h1>Champagner - Das prickelnde Erlebnis!</h1>
+		<ul class="bottleSelectBox">
+			<li>
+				<div class="bottleContainer">
+					<label>
+						<img class="bottleImage" src="https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8409901-01.png" alt="Cuvée Prestige Blanc de Blancs Brut, 75cl">
+						<span class="bottleDescription">Cuvée Prestige Blanc de Blancs Brut, 75cl</span>
+						<span class="bottlePrice">59.90</span>
+						<input type="radio" name="bottle" value="smallBottle" id="bottle" onClick="selectBottle(this);">
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="bottleContainer">
+					<label>
+						<img class="bottleImage" src="https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8410001-01.png" alt="Cuvée Prestige Blanc de Blancs Brut, 150cl">
+						<span class="bottleDescription">Cuvée Prestige Blanc de Blancs Brut, 150cl</span>
+						<span class="bottlePrice">119.90</span>
+						<input type="radio" name="bottle" value="largeBottle" id="bottle" onClick="selectBottle(this);">
+					</label>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="masterWrapper">
+	<div class="content">
+		<div class="test">
+			<h2>Vorschau:</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quisquam, ipsum sint labore optio delectus odio odit dolorem! Facilis possimus autem placeat earum velit aperiam sunt debitis ab minima quas!</p>
+		</div>
+		<div>
+			<h2>Vorschau:</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quisquam, ipsum sint labore optio delectus odio odit dolorem! Facilis possimus autem placeat earum velit aperiam sunt debitis ab minima quas!</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="masterWrapper">
+	<div class="content">
+		<div>
+			<h2>Vorschau:</h2>
+			<div class="previewWrapper">
+				<!-- <div class="previewChampagner" id="previewChampagner"></div> -->
+				<!--<img src="https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/8409901-01_vorschau.jpg" alt="">
+				<div class="previewTextChampagner">
+					<span id="previewRow1" class="previewRow1"></span>
+					<span id="previewRow2" class="previewRow2"></span>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h2>Schritt 3:</h2>
+			<h3>Eigenen Text entwerfen.</h3>
+			<div class="textDraft" id="textDraft">
+			</div>
+			<label for="zeile1" class="form-label">Obere Zeile</label>
+			<input class="form-control" type="text" id="zeile1" pattern="^[a-zA-Z0-9-_\.]{1,18}" maxlength="18" onKeyUp="preview('previewRow1', this.value)">
+			
+			<label for="zeile1" class="form-label">Untere Zeile</label>
+			<input class="form-control" type="text" id="zeile2" pattern="^[a-zA-Z0-9-_\.]{1,22}" maxlength="22" onKeyUp="preview('previewRow2', this.value)">
+
+			<button class="btn btn-info" type="button" value="JETZT BESTELLEN" onClick="sendOrder()">Jetzt bestellen</button>
+		</div>
+	</div>
+</div> -->
+<footer>
+	<script src="js/bottle.js"></script>
+</footer>
+</body>
+</html>
