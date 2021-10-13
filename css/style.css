@@ -76,6 +76,7 @@ h1 { text-align: center; }
 	flex-shrink: 1;
 	text-align: center;
 	margin: auto;
+	font-size: 1.1em;
 }
 
 ul.bottleSelectBox {
