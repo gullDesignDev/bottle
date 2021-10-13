@@ -7,7 +7,7 @@ html, body {
 }
 
 .wrapper {
-	margin: 15px;
+	padding: .5em;
 }
 
 h1 { text-align: center; }
@@ -87,7 +87,15 @@ ul.bottleSelectBox {
 }
 
 ul.bottleSelectBox li {
+	padding: 1em;
 	margin-right: 30px;
+	box-shadow: none;
+	transition: box-shadow ease .8s;
+}
+
+ul.bottleSelectBox li:hover {
+	box-shadow: 0px 0px 20px rgb(37, 37, 37);
+	transition: box-shadow ease .8s;
 }
 
 ul.bottleSelectBox li .bottleContainer {
@@ -96,6 +104,7 @@ ul.bottleSelectBox li .bottleContainer {
 
 ul.bottleSelectBox li .bottleContainer img.bottleImage {
 	width: 80%;
+	cursor: pointer;
 }
 
 ul.bottleSelectBox li .bottleContainer span.bottleTitle {
