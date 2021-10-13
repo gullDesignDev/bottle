@@ -135,6 +135,8 @@ ul.bottleSelectBox li .bottleContainer input[type="radio"] {
 	white-space: nowrap;
 	text-align: center;
 	width: 206px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.1em;
 }
 
 .previewTextChampagner span { display: block; }
