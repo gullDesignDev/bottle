@@ -128,6 +128,15 @@ ul.bottleSelectBox li .bottleContainer input[type="radio"] {
 	height: 700px;
 }
 
+.previewTextChampagner {
+	position: relative;
+	left: 266px;
+	bottom: 183px;
+	white-space: nowrap;
+	text-align: center;
+	width: 206px;
+}
+
 .previewTextChampagner span { display: block; }
 
 .form-label { margin-bottom: .5rem; }
