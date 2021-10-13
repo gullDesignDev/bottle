@@ -58,10 +58,10 @@
 				<h2>Beschriftung</h2>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsam eligendi placeat expedita itaque id facere iste, doloribus odit non alias dolorum ex.</p>
 				<div class="textDraft" id="textDraft"></div>
-				<label for="zeile1" class="form-label">Obere Zeile</label>
+				<label for="zeile1" class="form-label">Obere Zeile (max. 18 Zeichen)</label>
 				<input class="form-control" type="text" id="zeile1" pattern="^[a-zA-Z0-9-_\.]{1,18}" maxlength="18" onKeyUp="preview('previewRow1', this.value)">
 				
-				<label for="zeile1" class="form-label">Untere Zeile</label>
+				<label for="zeile1" class="form-label">Untere Zeile (max. 22 Zeichen)</label>
 				<input class="form-control" type="text" id="zeile2" pattern="^[a-zA-Z0-9-_\.]{1,22}" maxlength="22" onKeyUp="preview('previewRow2', this.value)">
 
 				<button class="btn btn-info" type="button" value="JETZT BESTELLEN" onClick="sendOrder()">Jetzt bestellen</button>
