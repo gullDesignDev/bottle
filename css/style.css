@@ -211,6 +211,14 @@ label { display: inline-block; }
 	}
 }
 
+@media screen and (max-width: 1056px) {
+	.inhalt {
+		background-image: url('https://www.angela-bruderer.ch/media/wysiwyg/personalisierbarerChampagner/gold_sterne_background_mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	.previewWrapper img {
 		width: 500px;
