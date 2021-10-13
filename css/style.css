@@ -123,6 +123,10 @@ ul.bottleSelectBox li .bottleContainer input[type="radio"] {
 	width: 100%;
 }
 
+.previewWrapper img {
+	max-width: unset;
+}
+
 .previewChampagner {
 	position: relative;
 	height: 700px;
