@@ -101,20 +101,21 @@ ul.bottleSelectBox li .bottleContainer img.bottleImage {
 ul.bottleSelectBox li .bottleContainer span.bottleTitle {
 	display: block;
 	margin-bottom: 15px;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-weight: 600;
 }
 
 ul.bottleSelectBox li .bottleContainer span.bottleDescription {
 	display: block;
 	margin-bottom: 10px;
-	font-size: 1em;
+	font-size: 1.3em;
 	width: 350px;
 }
 
 ul.bottleSelectBox li .bottleContainer span.bottlePrice {
 	display: block;
 	margin-bottom: 10px;
+	font-size: 1.3em;
 }
 
 ul.bottleSelectBox li .bottleContainer input[type="radio"] {
